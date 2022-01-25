@@ -17,13 +17,16 @@ to add Realm to your project.
 To add the adapters to your project, add the following to you app's dependencies:
 
 ```
-repositories {
-    jcenter()
-}
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
 
 dependencies {
-    compile 'io.realm:android-adapters:3.1.0'
-}
+	        implementation 'com.github.LouisP79:realm-android-adapters:4.0.0'
+	}
 ```
 
 This library is only compatible with Realm Java 3.0.0 and above.
